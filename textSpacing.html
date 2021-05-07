@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text Spacing</title>
+    <style>
+        main{
+            margin:40px auto;
+            width:526px;
+        }
+        main article{
+            border:1px solid #777;
+            display:inline-block;
+            height: 250px;
+            vertical-align: top;
+            padding:4px;
+            width:250;
+        }
+        main article.ls1{letter-spacing: 8px;}
+        main article.ws2{word-spacing: 16px;}
+    </style>
+</head>
+<body>
+    <main>
+        <article class="ls1">
+            <h3>letter spacing:8px</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Doloribus, facere beatae! Veniam neque rem, suscipit 
+                veritatis labore totam dolorem saepe odio, impedit 
+                obcaecati iure officiis possimus ipsa ducimus placeat eius!
+            </p>
+        </article>
+        <article class="ws2">
+            <h3>word-spacing: 16px</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Doloribus, facere beatae! Veniam neque rem, suscipit 
+                veritatis labore totam dolorem saepe odio, impedit 
+                obcaecati iure officiis possimus ipsa ducimus placeat eius!
+            </p>
+        </article>
+    </main>
+</body>
+</html>
