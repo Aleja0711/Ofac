@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        li:first-of-type{background-color: #f08f8f;}
+        li:last-of-type{background-color: #6bc550;}
+        li:nth-child(3){background-color: #5090c5;}
+        
+        table{
+            border-collapse:collapse;
+            color:#eeeeee;
+            margin: 0px auto ;
+            width: 240px;
+        }
+        table tr:nth-child(1n+1){
+            background-color: #aaaaaa;
+        }
+        table tr:nth-child(2n+2){
+            background-color: #807e7e;
+        }
+        nav {
+            margin: 0px auto;
+            width: 300px;
+        }
+        nav a:link,
+        nav a:visited {
+            background-color: #735885;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+        article {
+            border: 2px solid #735885;
+            display: none;
+            margin: 10px auto;
+            padding: 10px;
+            width: 300px;
+        }
+        article#home:target,
+        article#services:target,
+        article#contact:target {
+            display: block;
+        }
+        nav a.active {
+            background-color: #3f2e4b;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h3>
+            <a href="index.html">&larr;</a>
+            New Selectors
+        </h3>
+        <section>
+            <h2>li:First-Of-Type | li:Last-Of-Type | li:Nth-Child(3)</h2>
+            <ul>
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>PHP</li>
+                <li>C#</li>
+                <li>Java</li>
+            </ul>
+            <h2>tr:NthChild(1n+1) | tr:Nth-Child(2n+2)</h2>
+            <table>
+                <tr>
+                    <td>Cell 01</td>
+                </tr>
+                <tr>
+                    <td>Cell 02</td>
+                </tr>
+                <tr>
+                    <td>Cell 03</td>
+                </tr>
+                <tr>
+                    <td>Cell 04</td>
+                </tr>
+                <tr>
+                    <td>Cell 05</td>
+                </tr>
+                <tr>
+                    <td>Cell 06</td>
+                </tr>
+            </table>
+        </section>
+        <nav>
+            <article href="#home"></article>
+            <article href="#services"></article>
+            <article href="#contact"></article>
+        </nav>
+        <script>
+            let lis = document.getElementsByClassName('link');
+            for (let i = 0; i < lis.length; i++) {
+                lis[i].onclick = function() {
+                    removeActiveClass();
+                    this.classList.add('active');
+                }
+            }
+            function removeActiveClass() {
+                for (let i = 0; i < lis.length; i++) {
+                    lis[i].classList.remove('active');
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>
