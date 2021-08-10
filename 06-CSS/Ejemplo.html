@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo del Reto</title>
+    <style>
+        *{
+            transition: all 0.2s ease-in;
+        }
+        header {
+            margin: 10px auto;
+            width: 1400px;
+        }
+        header figure {
+            border: 2px solid black;
+            background: transparent url(https://1000marcas.net/wp-content/uploads/2021/02/Super-Mario-Logo.png) no-repeat center /cover;
+            display: inline-block;
+            height: 200px;
+            margin: 0px;
+            width: 342px;
+        }
+        @media (max-width: 1400px) {
+            header {
+                width: 800px;
+            }
+            header figure {
+                width: 394px;
+            }
+        }
+        @media (max-width: 800px) {
+            header {
+                width: 440px;
+            }
+            header figure {
+                width: 440px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <figure class="box1"></figure>
+        <figure class="box2"></figure>
+        <figure class="box3"></figure>
+        <figure class="box4"></figure>
+      </header>
+</body>
+</html>
