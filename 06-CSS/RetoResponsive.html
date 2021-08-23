@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Responsive</title>
+    <style>
+        *{
+            transition: all 0.2s ease-in;
+        }
+
+        body main header{
+            margin: 10px auto;
+            width: 1000px;
+        }
+
+        main figure{
+            background: transparent url(imgs/logo.png) no-repeat center/cover;
+            height: 400px;
+            margin: 0px auto;
+            width: 600px;
+        }
+        main header figure {
+            background: transparent url(imgs/colors.jpg) no-repeat center/cover;
+            display: inline-block;
+            height: 200px;
+            margin: 0px auto;
+            width: 230px;
+        }
+        @media (max-width: 900px) {
+            main figure{
+                width: 800px;
+            }
+            main header figure {
+                width: 450px;
+            }
+        }
+        @media (max-width: 700px) {
+            main figure{
+                width: 600px;
+            }
+            main header figure{
+                width: 600px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <figure class="Name"></figure>
+
+        <header>
+            <figure class="box1"></figure>
+            <figure class="box2"></figure>
+            <figure class="box3"></figure>
+            <figure class="box4"></figure>
+        </header>
+
+        <div>
+
+        </div>
+    </main>
+</body>
+</html>
