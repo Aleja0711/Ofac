@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Responsive</title>
+    <style>
+        *{transition: all 0.2s ease-in;}
+
+        body main{
+            color: #ffffffaa;
+            margin: 40px auto;
+            padding: 20px;
+            color: black;
+        }
+        main figure{
+            background: transparent url(imgs/opm-logo.png) no-repeat center/cover;
+            height: 200px;
+            margin: 0px auto;
+            width: 919px;
+        }
+        main header figure.box1,
+        main header figure.box3{
+            background: transparent url(imgs/opm1.jpg) no-repeat center/cover;
+            display: inline-block;
+            height: 200px;
+            margin: 10px auto;
+            width: 320px;
+        }
+        main header figure.box2,
+        main header figure.box4 {
+            background: transparent url(imgs/opm2.jpg) no-repeat center/cover;
+            display: inline-block;
+            height: 200px;
+            margin: 10px auto;
+            width: 320px;
+        }
+
+        main div.Saitama figure{
+            background: transparent url(imgs/opm3Copia.png) no-repeat center/cover;
+            height: 200px;
+            width: 400px;
+            display: inline-block;
+        }
+        main div.Saitama div{
+            height: 200px;
+            width: 600px;
+            color:black;
+            font: 15px verdana;
+            display: inline-block;
+            text-align: justify;
+            vertical-align: top;
+        }
+
+        main div.Genos figure{
+            background: transparent url(imgs/opm4.png) no-repeat center/cover;
+            height: 200px;
+            width: 400px;
+            display: inline-block;
+        }
+        main div.Genos div{
+            height: 200px;
+            width: 600px;
+            color:black;
+            font: 15px verdana;
+            display: inline-block;
+            text-align: justify;
+            vertical-align: top;
+        }
+
+
+        @media (max-width: 1024px) {
+            main figure{
+                width: 750px;
+            }
+            main header figure.box1,
+            main header figure.box3{
+                height: 200px;
+                width: 360px;
+            }
+            main header figure.box2,
+            main header figure.box4 {
+                height: 200px;
+                width: 360px;
+            }
+        
+            main div.Saitama figure,
+            main div.Saitama div{
+                height: 300px;
+                width: 360px;
+            }
+            main div.Genos figure,
+            main div.Genos div{
+                height: 300px;
+                width: 360px;
+            }
+ 
+        }
+
+        @media (max-width: 780px) {
+            main figure{
+                height: 200px;
+                width: 700px;
+            }
+            main header figure.box1,
+            main header figure.box3{
+                height: 400px;
+                width: 600px;
+            }
+            main header figure.box2,
+            main header figure.box4 {
+                height: 400px;
+                width: 600px;
+            }
+            main div.Saitama figure,
+            main div.Saitama div{
+                width: 600px;
+            }
+            main div.Genos figure,
+            main div.Genos div{
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <figure></figure>
+
+        <header>
+            <figure class="box1"></figure>
+            <figure class="box2"></figure>
+            <figure class="box3"></figure>
+            <figure class="box4"></figure>
+        </header>
+
+        <br><br>
+
+        <div class="Saitama">
+            <figure></figure>
+            <div class="content ">
+                <h3>SAITAMA SENSEI</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum distinctio excepturi, 
+                    rem harum aperiam minima dignissimos odit hic, ab repellendus reprehenderit, praesentium 
+                    debitis nam. Rerum aperiam esse placeat quod voluptatibus.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum distinctio excepturi, 
+                    rem harum aperiam minima dignissimos odit hic, ab repellendus reprehenderit, praesentium 
+                    debitis nam. Rerum aperiam esse placeat quod voluptatibus.
+                </p>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="Genos">
+            <figure></figure>
+            <div class="content ">
+                <h3>GENOS</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum distinctio excepturi, 
+                    rem harum aperiam minima dignissimos odit hic, ab repellendus reprehenderit, praesentium 
+                    debitis nam. Rerum aperiam esse placeat quod voluptatibus.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum distinctio excepturi, 
+                    rem harum aperiam minima dignissimos odit hic, ab repellendus reprehenderit, praesentium 
+                    debitis nam. Rerum aperiam esse placeat quod voluptatibus.
+                </p>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
